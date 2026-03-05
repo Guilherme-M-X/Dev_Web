@@ -1,0 +1,23 @@
+#background {
+    background-color: #FFE0A3;
+    repeat: repeat;
+    text-align: center;
+}
+
+#topo {
+    background-color: #DAA520;
+    text-align: center;
+}
+
+#menu {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #2315a6;
+    font-weight: bold;
+    padding: 30px;
+}
