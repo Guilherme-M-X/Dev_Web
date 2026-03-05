@@ -60,3 +60,14 @@ a {
     padding: 30px;
 }
 /* Fim Estilização do menu de navegação */
+
+/* Inicio Estilização do formulário */
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff7e0;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+/* Fim Estilização do formulário */
