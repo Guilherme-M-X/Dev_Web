@@ -2,6 +2,11 @@
 
 
 /* Inicio Estilização do fundo do site */
+body {
+    margin: 0;
+    background-color: #FFE0A3;
+}
+
 #background {
     background-color: #FFE0A3;
     text-align: center;
