@@ -30,6 +30,7 @@ body {
 
 .texto-topo {
     flex: 1;
+    text-align: center;
 }
 
 .texto-topo h1 {
@@ -48,6 +49,7 @@ body {
 
 /* Fim Estilização do topo do site */
 
+
 /* Inicio Estilização do menu de navegação */
 #menu {
     background-color: #f0f0f0;
@@ -65,9 +67,10 @@ a {
 /* Fim Estilização do menu de navegação */
 
 
+/* Inicio Estilização da seção de categorias */
 .categorias {
-    width: 250px;
-    height: 300px;
+    width: 15%;
+    height: auto;
     position: fixed;
     top: 228px;
     left: 0;
@@ -82,6 +85,9 @@ a {
     overflow-y: auto;
 }
 
+/* Fim Estilização da seção de categorias */
+
+
 /* Inicio Estilização da seção de receitas */
 .receitas-recentes {
     text-align: center;
@@ -93,7 +99,6 @@ a {
     width: 200px;
     margin: 0 40px;
     border: 2px solid #b5651d;
-    /* cor da borda */
     border-radius: 10px;
     padding: 10px;
     background-color: #fff7e0;
@@ -113,6 +118,7 @@ a {
 }
 
 /* Fim Estilização da seção de receitas */
+
 
 /* Inicio Estilização do formulário */
 form {
