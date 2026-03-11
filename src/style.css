@@ -67,13 +67,12 @@ a {
 
 .categorias {
     width: 250px;
-    height: 100vh;
+    height: 300px;
     position: fixed;
-    top: 0;
+    top: 228px;
     left: 0;
     background-color: #f5e8c7;
-    /* Bege claro, harmonizando */
-    border-right: 2px solid #d4b373;
+    border-right: 2px solid #fff7e0;
     /* Borda direita só */
     border-radius: 0 15px 15px 0;
     /* Arredondado à direita */
@@ -81,8 +80,6 @@ a {
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
     /* Sombra à direita */
     overflow-y: auto;
-    z-index: 1000;
-    /* Fica por cima se necessário */
 }
 
 /* Inicio Estilização da seção de receitas */
