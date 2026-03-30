@@ -70,7 +70,8 @@ a {
 /* Inicio Estilização da seção de categorias */
 .categorias {
     width: 15%;
-      position: fixed;
+    height: auto;
+    position: fixed;
     top: 228px;
     left: 0;
     background-color: #f5e8c7;
@@ -147,8 +148,10 @@ form {
     padding: 10px;
     background-color: #fff7e0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /*Crescimento suave da foto*/
-    cursor: pointer; /*mãozinha do mouse*/
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /*Crescimento suave da foto e da sombra*/
+    cursor: pointer;
+    /*mãozinha do mouse*/
 }
 
 .pictures-family:hover{
@@ -164,12 +167,18 @@ form {
 }
 
 .fotos-container {
-    display: flex;            /* Ativa o modo flexbox */
-    justify-content: center;  /* Alinha os itens horizontalmente no centro */
-    align-items: center;      /* Alinha os itens verticalmente (se houver alturas diferentes) */
-    flex-wrap: wrap;          /* Se a tela for pequena, as fotos pulam para a linha de baixo */
-    gap: 20px;                /* Cria um espaçamento uniforme entre as fotos sem precisar de margin */
-    padding: 20px;            /* Espaço interno para não encostar nas bordas da tela */
+    display: flex;
+    /* O flexbox organiza, alinha e distribui os espaços entre os elemente */         
+    justify-content: center;
+    /* Alinha os itens horizontalmente no centro */
+    align-items: center;
+    /* Alinha os itens verticalmente (se houver alturas diferentes) */ 
+    flex-wrap: wrap;
+    /* Se a tela for pequena, as fotos pulam para a linha de baixo */
+    gap: 20px;
+    /* Cria um espaçamento uniforme entre as fotos sem precisar de margin */     
+    padding: 20px;
+     /* Espaço interno para não encostar nas bordas da tela */           
 }
 
 /* Fim Estilização do sobre */
