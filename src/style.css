@@ -47,6 +47,12 @@ body {
     color: #5c4a2f;
 }
 
+.login {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+
 /* Fim Estilização do topo do site */
 
 
