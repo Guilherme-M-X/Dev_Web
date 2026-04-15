@@ -75,6 +75,11 @@ body {
     cursor: pointer;
 }
 
+#botaoLogin {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
 /* Fim Estilização do topo do site */
 
 
