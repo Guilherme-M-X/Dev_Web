@@ -48,17 +48,30 @@ body {
 }
 
 /* Estilização do login e cadastro */
-.login {
-    position: absolute;
-    top: 20px;
-    right: 20px;
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.5); 
 }
 
-.login a {
-    font-weight: bold;
-    padding: 1px 5px;
-    border-radius: 5px;
-    background-color: #e6e2da;
+.conteudoModal {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  width: 300px; 
+  border-radius: 8px;
+  text-align: center;
+}
+
+
+.fechar {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  cursor: pointer;
 }
 
 /* Fim Estilização do topo do site */
