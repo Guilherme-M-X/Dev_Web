@@ -80,6 +80,7 @@ body {
     top: 10px;
     right: 10px;
 }
+
 /* Fim Estilização do topo do site */
 
 
@@ -216,3 +217,28 @@ form {
 }
 
 /* Fim Estilização do sobre */
+
+/* Inicio Estilização das páginas de receitas */
+.corpo {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff7e0;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Fim Estilização das páginas de receitas */
+
+/* Inicio Estilização do rodapé */
+#rodape {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 1px;
+    margin-top: 10px;
+}
+
+/* Fim Estilização do rodapé */
