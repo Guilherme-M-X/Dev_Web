@@ -119,6 +119,66 @@ a {
     overflow-y: auto;
 }
 
+.corpo-a {
+    flex: 1;               
+     /* Faz cada card ocupar o mesmo espaço */
+    min-width: 280px;       
+    max-width: 350px;       
+    background-color: #fff; 
+    border-radius: 12px;
+    overflow: hidden;       
+    /* Garante que a imagem não saia da borda arredondada */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.container-receitas {
+    display: flex;
+    flex-direction: row;     
+    /* Força a direção horizontal */
+    justify-content: center;
+    align-items: stretch;    
+    /* Faz com que todos os cards fiquem com a mesma altura */
+    gap: 20px;
+    flex-wrap: nowrap;       
+    /* Impede que elas pulem linha em telas grandes */
+    width: 100%;            
+     /* Ocupa a largura disponível */
+    max-width: 1200px;       
+    /* Não deixa espalhar demais em telas gigantes */
+    margin: 20px auto;      
+     /* Centraliza o bloco todo na página */
+}
+
+.imagem-receita-container {
+    width: 100%;           
+    height: 150px;          
+    overflow: hidden;         
+    /* Esconde qualquer parte da imagem que sobrar */
+    border-top-left-radius: 12px;  
+    border-top-right-radius: 12px; 
+    margin-bottom: 15px;      
+    /* Espaço entre a imagem e o título */
+    
+}
+
+
+.imagem-receita-container img {
+    width: 100%;            
+    height: 100%;           
+    object-fit: cover;       
+    /* corta e ajusta a imagem para preencher sem distorcer */
+    object-position: center; 
+    /* Centraliza o corte */
+}
+
+.conteudo-receita {
+    padding: 20px;
+    padding-top: 0;  
+    /* Título já tem margem, não precisa de padding extra no topo */        
+}
+
 /* Fim Estilização da seção de categorias */
 
 
@@ -137,7 +197,17 @@ a {
     padding: 10px;
     background-color: #fff7e0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /*Crescimento suave da foto e da sombra*/
+    cursor: pointer;
+    /*mãozinha do mouse*/
 }
+
+.receita-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 30px 20px rgba(0, 0, 0, 0.3);
+
+}    
 
 .receita-card img {
     width: 100%;
