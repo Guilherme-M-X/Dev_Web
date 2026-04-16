@@ -186,12 +186,23 @@ a {
 .receitas-recentes {
     text-align: center;
     margin-top: 30px;
+    margin-left: 120px;
+    padding: 20px;
+}
+
+.grade-receitas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    /* Permite que os cards pulem para a linha de baixo em telas menores */
 }
 
 .receita-card {
-    display: inline-block;
-    width: 200px;
-    margin: 0 40px;
+    width: 100%;
+    margin: 0 auto;
     border: 2px solid #b5651d;
     border-radius: 10px;
     padding: 10px;
@@ -205,8 +216,17 @@ a {
 
 .receita-card:hover {
     transform: scale(1.05);
-    box-shadow: 0 30px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 
+}
+
+.receita-card a {
+    display: block;
+    margin-top: 10px;
+    color: #2315a6;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0;
 }
 
 .receita-card img {
@@ -260,7 +280,7 @@ form {
 
 .pictures-family:hover {
     transform: scale(1.05);
-    box-shadow: 0 30px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 
 }
 
