@@ -8,6 +8,7 @@ body {
 }
 
 #background {
+    overflow: auto;
     background-color: #ffedc8d9;
     text-align: center;
 }
