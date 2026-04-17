@@ -322,11 +322,81 @@ form {
 /* Fim Estilização das páginas de receitas */
 
 /* Inicio Estilização dos comentários */
+#grade-comentarios {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
 #comentarios {
-    position: absolute;
-    bottom: 0;
-    margin-top: 30px;
+    width: 100%;
+    max-width: 700px;
+    background-color: #fff7e0;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
     text-align: left;
+    border: 1px solid #e0d2b8;
+}
+
+#comentarios h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #5a3200;
+    font-size: 1.8rem;
+}
+
+#comentarios p {
+    margin-bottom: 20px;
+    color: #5c4a2f;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.form-comentario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-comentario input, .form-comentario textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #c9b79c;
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: #fffdf8;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.form-comentario textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+.form-comentario input:focus, .form-comentario textarea:focus {
+    border-color: #b5651d;
+    box-shadow: 0 0 0 3px rgba(181, 101, 29, 0.15);
+}
+
+.form-comentario button {
+    align-self: flex-start;
+    background-color: #b5651d;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.form-comentario button:hover {
+    background-color: #8f4a12;
+    transform: translateY(-2px);
 }
 
 /* Fim Estilização dos comentários */
