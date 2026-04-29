@@ -2,9 +2,18 @@
 
 
 /* Inicio Estilização do fundo do site */
+html,
 body {
     margin: 0;
     background-color: #ffedc8d9;
+    min-height: 100%;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 #background {
@@ -360,7 +369,8 @@ form {
     gap: 15px;
 }
 
-.form-comentario input, .form-comentario textarea {
+.form-comentario input,
+.form-comentario textarea {
     width: 100%;
     padding: 12px 15px;
     border: 1px solid #c9b79c;
@@ -376,7 +386,8 @@ form {
     resize: vertical;
 }
 
-.form-comentario input:focus, .form-comentario textarea:focus {
+.form-comentario input:focus,
+.form-comentario textarea:focus {
     border-color: #b5651d;
     box-shadow: 0 0 0 3px rgba(181, 101, 29, 0.15);
 }
@@ -407,7 +418,7 @@ form {
     background-color: #f0f0f0;
     text-align: center;
     padding: 15px 10px;
-    margin-top: 30px;
+    margin-top: auto;
 }
 
 /* Fim Estilização do rodapé */
