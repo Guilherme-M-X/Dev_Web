@@ -129,6 +129,29 @@ a {
     overflow-y: auto;
 }
 
+.categorias ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.categorias li {
+    margin-bottom: 1px;
+}
+
+.categorias a {
+    display: block;
+    padding: 6px 10px;
+    text-decoration: none;
+    color: #2d2d8b;
+    line-height: 1.4;
+}
+
+.categorias a:hover {
+    background-color: #f3e3b3;
+    border-radius: 6px;
+}
+
 .corpo-a {
     flex: 1;
     /* Faz cada card ocupar o mesmo espaço */
