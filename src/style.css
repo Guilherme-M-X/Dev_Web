@@ -113,20 +113,46 @@ a {
 
 /* Inicio Estilização da seção de categorias */
 .categorias {
-    width: 12%;
-    height: auto;
-    position: fixed;
-    top: 228px;
-    left: 0;
+    /* 1. Tamanho e Estilo base */
+    width: 250px;
     background-color: #f5e8c7;
-    border-right: 2px solid #fff7e0;
-    /* Borda direita só */
     border-radius: 0 15px 15px 0;
-    /* Arredondado à direita */
     padding: 20px;
-    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
-    /* Sombra à direita */
-    overflow-y: auto;
+    box-shadow: 5px 0 20px rgba(0, 0, 0, 0.2);
+
+    /* 2. Posicionamento e Esconderijo */
+    position: fixed;   
+    /* Ele fica preso na tela */
+    left: 0;
+    top: 250px;    
+    /* Ajuste para ficar abaixo do header */    
+    z-index: 1000;     
+    /* Garante que ele fique NA FRENTE de tudo */
+    transform: translateX(-230px); 
+    /* Move o menu 230px para a esquerda (sobra uma bordinha de 20px aparecendo) */
+    transition: transform 0.4s ease;
+     /* Animação suave ao deslizar */
+    cursor: pointer;
+}
+
+/* 3. Quando passar o mouse, ele volta para a posição original */
+.categorias:hover {
+    transform: translateX(0);
+}
+
+/* Adicionado um aviso visual na borda que sobra */
+.categorias::after {
+    content: "➔"; 
+    /* Uma setinha indicando que tem algo ali */
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    color: #8b4513;
+    font-weight: bold;
+}
+
+.categorias:hover::after {
+    display: none; /* Esconde a seta quando o menu abre */
 }
 
 .categorias ul {
